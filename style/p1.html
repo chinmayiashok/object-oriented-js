@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./media.css">
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            background-color: #000;
+            display: flex;
+            /* flex-wrap: wrap; */
+            color: #fff;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            padding: 20px;
+        }
+        header img{
+            width: 60px;
+        }
+        header ul{
+            display: flex;
+            /* flex-wrap: wrap; */
+            list-style-type: none;
+            gap: 30px;
+        }
+        header button{
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            color: #000;
+
+        }
+        .home{
+            background-color: #000;
+        }
+        .home img{
+            width: 100%;
+            height: 700px;
+            
+            padding: 50px;
+            position: relative;
+
+        }
+        .home-0{
+            position: absolute;
+            transform: translateY(-500px);
+            padding-left: 150px;
+
+        }
+        .home-0 h1{
+            color: #fff;
+            font-size: 60px;
+
+
+        }
+        .home-0 p{
+            color: #fff;
+            font-size: 20px;
+            padding-top: 50px;
+            font-weight: bold;
+        }
+
+
+        /menu/
+        .card-0{
+            display: flex;
+            /* flex-wrap: wrap; */
+            background-color: #000;
+            width: 500px;
+            border-radius: 20px;
+            color: #fff;
+
+        }
+        .card-1 img{
+            width: 200px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .card-2{
+            padding: 20px;
+
+        }
+        .card-2 h3{
+            color: rgb(216, 151, 9);
+        }
+        .menu{
+            background-color: #221203e8;
+            padding: 30px;
+            position: relative;
+        }
+        .card-right{
+            position: absolute;
+            transform: translateY(-518px);
+            padding-left: 800px;
+        }
+        .card-left{
+            color: #fff;
+            padding: 30px;
+            /* background-color: #000; */
+
+
+        }
+        .card-left-1{
+            display: flex;
+            /* flex-wrap: wrap; */
+            padding: 20px;
+            gap: 80px;
+            line-height: 2.1;
+        }
+        .card-left-2{
+            display: flex;
+            /* flex-wrap: wrap; */
+            padding: 20px;
+            gap: 80px;
+            line-height: 2.1;
+
+        }
+        .menu1{
+            background-color: #201503;
+            margin: 20px;
+        }
+        /about us/
+        .about-us{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq_z_PDyEznIlTT48IC3i_ozPjwNIeA4H5qNEuK_k1Rg&s);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+           
+            color: #fff;
+            height: 600px;
+            padding: 30px;
+            position: relative;
+        }
+        .format{
+            background-color: #3b2a1d;
+
+        }
+        .about-us{
+            margin: 50px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: #fff;
+            
+        }
+        .about-left{
+            position: absolute;
+            padding-left: 80px;
+            padding-top: 60px;
+
+
+        }
+        .about-right{
+            position: absolute;
+            transform: translate(800px);
+            padding-top: 230px;
+            /* background-color: #021d40; */
+            /* display: contents; */
+        }
+        .ur{
+            position: absolute;
+            background-color: orangered;
+            width: 90px;
+            height: 90px;
+            /* align-items: center;
+            justify-content: center; */
+            border-radius: 90px;
+            padding-left: 30px;
+            padding-top: 10px;
+            transform: translate(160px);
+            margin-top: -70px;
+        }
+       
+
+/* /footer/ */
+
+        .footer {
+         display: flex;
+         flex-wrap: wrap;
+         background-color:#1f130a;
+         padding: 70px 100px;
+         gap: 50px;
+         color: #fff;
+        }
+        .footer i {
+         font-size: 14px;
+         color: yellow;
+        }
+        .contact,
+        .support,
+        .features {
+           flex: 1;
+  }
+
+  .edubin {
+    flex: 2;
+    /* margin: 30px; */
+  }
+  .edubin img {
+    width: 240px;
+  }
+  .edubin i {
+    color: white;
+    background-color:#021d40;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .edubin > div {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer > div:nth-child(1),
+  .footer > div:nth-child(2),
+  .footer > div:nth-child(3),
+  .footer > div:nth-child(4),
+  .footer > div:nth-child(5) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .footer > div:nth-child(2) p,
+  .footer > div:nth-child(3) p,
+  .footer > div:nth-child(4) p,
+  .footer > div:nth-child(5) p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer > div:nth-child(2) h3,
+  .footer > div:nth-child(4) h3,
+  .footer > div:nth-child(5) h3 {
+    font-size: 20px;
+  }
+  .footer > div:nth-child(3) {
+    margin-top: 40px;
+  }
+  .footer > div:nth-child(1) p {
+    line-height: 2;
+  }
+
+  .foot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:#000;
+    height: 100px;
+    color: #fff;
+    padding: 40px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  .foot1{
+    padding-left: 75px;
+  }
+  .foot2{
+    padding-right: 330px;
+  }
+  header ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  header ul li a:hover{
+    color: blue;
+  }
+  button:hover{
+    background-color: rgb(97, 33, 11);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+
+</style>
+</head>
+<body>
+    <header>
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <img src="https://i.pinimg.com/originals/48/a6/82/48a6823ba295e69509abcaaf0f8c74fa.png" alt="">
+        <h1> Sathya Coffee Shop</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button>Search for more</button>
+    </header>
+
+    <section class="home">
+        <img src="https://stories.uq.edu.au/research/2022/coffee-is-going-extinct/assets/wUb2t9rgAD/uq-research-coffee-cup-2560x1440.jpg" alt="">
+
+        <div class="home-0">
+            <h1>A relaxing <br> Coffee Break</h1>
+
+            <p>A place where you can enjoy <br> a good cup of coffee</p>
+        </div>
+      
+    </section>
+
+
+    <section class="menu">
+      <div class="menu1">
+        <div class="card-left">
+            <div class="card-left-1">
+                <div class="card-l1">
+                    <h2>MOCHA</h2>
+                    <p>Iced Mocha   ......$80.00</p>
+                    <p>Cafe Mocha   ......$50.00</p>
+                    <p>Latte Mocha  ......$40.00</p>
+                    <p>Machiato     ......$50.00</p>
+                    <p>Mocha Frappe ......$75.00</p>
+                </div>
+    
+                <div class="card-l2">
+                    <h2>LATTES</h2>
+                    <p>Americano Latte  ....$90.00</p>
+                    <p>Cappuccino Latte ....$80.00</p>
+                    <p>Caramel Latte    ....$95.00</p>
+                    <p>Costa Latte Pods ....$75.00</p>
+    
+                </div>
+            </div>
+    
+            <div class="card-left-2">
+                <div class="card-l21">
+                    <h2>ESPRESSO</h2>
+                    <p>Espresso     ....$85.00</p>
+                    <p>Espresso Americano $75.00</p>
+                    <p>Espresso Macchaiato $95.00</p>
+                    <p>Espresso Doppio ..$65.00</p>
+                </div>
+    
+                <div class="card-l22">
+                    <h2>LIQUOR COFFEES</h2>
+                    <p>Whisky Coffee ...$45.00</p>
+                    <p>Gaellc Coffee ...$55.00</p>
+                    <p>Irish Cream   ...$85.00</p>
+                    <p>Freanch Coffee...$95.00</p>
+                    <p>Brandy Coffee ...$75.00</p>
+                </div>
+            </div>
+            </div> 
+           
+<div class="card-right">
+            
+           <div class="card-0">
+            <div class="card-1">
+                <img src="https://skyborn.in/cdn/shop/products/COFFEEMUGCAPPUCCINO_LATTE_BIGTEACUP.CRYSTALCLEARGLASSCUPS_ESPRESSOCOFFEEGIFTSPACKOF_8_-220ML_800x.webp?v=1674042566" alt="">
+                <br>
+                <img src="https://www.emergestores.com/cdn/shop/products/61SOpDO-GlL._SL1100.jpg?v=1654506579" alt="">
+            </div>
+    
+    
+            <div class="card-2">
+                <h1>SPECIALTY COFFEE::</h1>
+                <h3>BLACK MAMBA</h3>
+                <P>In Memoriem - Kobe24ever <br>
+                Hot / Iced</P>
+                <h3>CLASSIC LATTE</h3>
+                <P>Hot / Ice / Frappe:</P>
+                <h3>CLASSIC CAPPUCCINO</h3>
+                <P>Hot / Ice / Frappe:</P>
+                <h3>DOUBLE CHOCOLATE ESPRESSO</h3>
+                <P>Hot / Ice / Frappe:</P>
+                <h3>CLASSIC MOCHA</h3>
+                <P>Hot / Ice / Frappe:</P>
+                <h3>CLASSIC CARAMEL MACCHIATO</h3>
+                <P>Hot / Ice / Frappe:</P>
+            </div>
+           </div>
+            
+         </div>
+      </div>
+
+    </section>
+
+<section class=" format" >
+
+      <div class="about-us">
+        <div class="about-left">
+            <h1 style="font-size: 40px; text-decoration: underline;">ABOUT US</h1>
+            <h2>Coffee Shop</h2>
+            <p style="padding-top: 20px;">A constellation Consists of visible stars that <br> form a precevied outline or pattern , ussually <br> representing an animal , a person or <br> mythological creature, or an inaminate objects.</p>
+    
+            <p style="padding-top: 40px; font-weight: bold;">
+                The purpose of the constellation was to tell <br> stories of their beliefs, experiences, <br> creation, or mythology.
+            </p>
+           </div>
+    
+           <div class="about-right">
+            <h1  style="font-size: 40px; text-decoration: underline;">SPECIAL <br> OFFER</h1>
+            <span class="ur">Get <br> 30% <br> off</span>
+            <h2 style="font-size: 20px; font-weight: bold; padding-top: 20px; ">VANILLA LATTE</h2>
+            <P style="padding-top: 20px;">Each constellation is a region of the <br> sky: together they cover the entire <br> celestial sphere.</P>
+    
+           </div>
+    
+    
+      </div>
+
+
+    </section>
+
+
+    <footer>
+        <div class="footer">
+           <div class="edubin">
+            <img src="https://i.pinimg.com/originals/48/a6/82/48a6823ba295e69509abcaaf0f8c74fa.png" alt="">
+            <h2>Sathya coffee Shop</h2>
+            <div class="icons">
+                <p><i class="fa-brands fa-facebook"></i></p>
+                <p><i class="fa-brands fa-twitter"></i></p>
+                <p><i class="fa-sharp fa-solid fa-envelope"></i></p>
+                <p><i class="fa-brands fa-youtube"></i></p>
+            </div>
+      
+        </div>
+    
+        
+            <div>
+                <h3>Feature Links</h3>
+                <p><span><i class="fa-solid fa-angle-right"></i></span>About Us</p>
+                <p><span><i class="fa-solid fa-angle-right"></i></span>More search</p>
+                <p><span><i class="fa-solid fa-angle-right"></i></span>Blog</p>
+                <p><span><i class="fa-solid fa-angle-right"></i></span>Testimonials</p>
+                <p><span><i class="fa-solid fa-angle-right"></i></span>Events</p>
+        
+            </div>
+        
+            <div>
+                <p><span><i class="fa-solid fa-angle-right"></i></span>Help ful links</p>
+                <p><span><i class="fa-solid fa-angle-right"></i></span>service</p>
+                <p><span><i class="fa-solid fa-angle-right"></i></span>Our Team</p>
+                <p><span><i class="fa-solid fa-angle-right"></i></span>Support</p>
+                <p><span><i class="fa-solid fa-angle-right"></i></span>Events</p>
+        
+            </div>
+        
+            <div>
+                <h3>Support</h3>
+                    <p><span><i class="fa-solid fa-angle-right"></i></span>Privacy policy</p>
+                    <p><span><i class="fa-solid fa-angle-right"></i></span>influency</p>
+                    <p><span><i class="fa-solid fa-angle-right"></i></span>Affilate</p>
+                    <p><span><i class="fa-solid fa-angle-right"></i></span>Honor</p>
+                    <p><span><i class="fa-solid fa-angle-right"></i></span>Give away</p>
+            </div>
+        
+            <div>
+                <h3>Contact Us</h3>
+                <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+                <p><i class="fa-solid fa-phone" style="color: #fff;"></i>+123-4567-8920</p>
+                <p><i class="fa-solid fa-envelope" style="color: #fff;"></i>info@yourmail.com</p>
+                <p><i class="fa-solid fa-globe" style="color: #fff;"></i>www.yourdomain.com</p>
+        
+            </div>
+        </div>
+        </div>
+        <div class="foot">
+            <div class="foot1">©2024 Pixlcurve.All rights reserved.</div>
+            <div class="foot2">
+                <h3>Thanks for visiting our coffee shop</h3>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>
+<h1>class es-6</h1>
+<p>finding even or odd</p>
+</center>
+<hr>
+<form action="" onsubmit="submitHandler"(event)">
+    <label for="">enter a number</label>=
+    <input type="number" name="name"
+</form>
+
+<script>
+    function submitHandler(event){
+        event.preventDefault();
+
+        let num = Number(document)
+
+    }
+
+    class EvenOdd{
+        constructor(val){
+            this.num = val;
+        }
+        find(){
+            if(this.num % 2 ===0){
+                return `${this.num} is even`
+            }
+            else{
+                return `${this.num} is odd`
+            }
+        }
+    }
+</script>
+</body>
+</html>
